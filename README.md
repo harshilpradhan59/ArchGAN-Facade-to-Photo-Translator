@@ -265,7 +265,7 @@ pip install -r requirements.txt
 
 ### Training Progression Animation
 
-![Training Progress](assets/facades_generate_animation.gif)
+![Training Progress](assets/cityscapes_generate_animation.gif)
 
 *Training animation showing model improvement from epoch 1 to 200*
 
