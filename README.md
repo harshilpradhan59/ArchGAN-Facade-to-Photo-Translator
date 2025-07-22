@@ -1,4 +1,4 @@
-# Pix2Pix Conditional GAN for Facades Dataset
+# ArchGAN-Facade-to-Photo-Translator
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/)
@@ -13,7 +13,7 @@ By **Harshil Pradhan**
 
 ## 📖 Introduction
 
-This repository presents a comprehensive implementation of **Pix2Pix (Pixel-to-Pixel) Conditional Generative Adversarial Network**, a groundbreaking deep learning model for image-to-image translation tasks. Originally introduced by Isola et al. in their 2017 CVPR paper "Image-to-Image Translation with Conditional Adversarial Networks," Pix2Pix revolutionized the field of conditional image generation.
+This repository presents a comprehensive implementation of **ArchGAN-Facade-to-Photo-Translator**, a groundbreaking deep learning model for image-to-image translation tasks. Originally introduced by Isola et al. in their 2017 CVPR paper "Image-to-Image Translation with Conditional Adversarial Networks," Pix2Pix revolutionized the field of conditional image generation.
 
 ### What is Pix2Pix?
 
