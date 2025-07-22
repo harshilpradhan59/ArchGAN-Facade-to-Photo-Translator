@@ -5,7 +5,7 @@
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)](https://jupyter.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **Implementation of Pix2Pix Conditional GAN for semantic segmentation to realistic image translation using Facades dataset**
+> **Implementation of Pix2Pix Conditional GAN for semantic segmentation to realistic image translation using CityScapess dataset**
 
 By **Harshil Pradhan**
 
@@ -25,8 +25,8 @@ The revolutionary aspect of Pix2Pix lies in its ability to learn a **general-pur
 
 ### Applications
 
-- **Semantic Segmentation to Photos**: Converting label maps to realistic architectural facades
-- **Architectural Visualization**: Transforming building sketches to photorealistic facades  
+- **Semantic Segmentation to Photos**: Converting label maps to realistic architectural CityScapes
+- **Architectural Visualization**: Transforming building sketches to photorealistic CityScapes  
 - **Style Transfer**: Day-to-night translation, colorization tasks
 - **Medical Imaging**: Cross-modal medical image translation
 - **Map Generation**: Converting satellite imagery to street maps
@@ -35,17 +35,17 @@ The revolutionary aspect of Pix2Pix lies in its ability to learn a **general-pur
 
 ## 📊 Dataset
 
-### Facades Dataset Overview
+### CityScapes Dataset Overview
 
-This implementation utilizes the **Facades dataset**, a comprehensive architectural dataset that provides paired images for building facade generation:
+This implementation utilizes the **CityScape dataset**, a comprehensive architectural dataset that provides paired images for building CityScapes generation:
 
 ![Sample Dataset](assets/sample_dataset_image.png)
 
 #### Dataset Specifications
-- **Training Images**: 400 high-quality architectural facade pairs
+- **Training Images**: 400 high-quality architectural CityScapes pairs
 - **Image Resolution**: 256×256 pixels 
 - **Image Format**: RGB color images
-- **Content**: Building facades with corresponding semantic label maps
+- **Content**: Building CityScapess with corresponding semantic label maps
 - **Geographic Coverage**: Various architectural styles and building types
 
 #### Data Structure
@@ -53,8 +53,8 @@ This implementation utilizes the **Facades dataset**, a comprehensive architectu
 ├── Input (A): Semantic segmentation masks
 │   ├── Colored label maps with architectural elements
 │   └── Labels for windows, doors, walls, roofs, etc.
-└── Target (B): Real photographic building facades
-    ├── High-resolution facade photographs
+└── Target (B): Real photographic building CityScapes
+    ├── High-resolution CityScapes photographs
     └── Corresponding ground truth for segmentation maps
 ```
 
@@ -231,8 +231,8 @@ Output: 30×30×1 (Patch Classifications)
 
 ### Repository Structure
 ```
-pix2pix-facades/
-├── pix2pix_conditional_gan_facades.ipynb     # Main implementation notebook
+pix2pix-CityScapess/
+├── pix2pix_conditional_gan_CityScapess.ipynb     # Main implementation notebook
 ├── README.md                                # This documentation  
 ├── requirements.txt                         # Python dependencies
 └── assets/
@@ -240,18 +240,18 @@ pix2pix-facades/
     ├── final_generated_image.png
     ├── epoch_loss.png
     ├── Pix2Pix-GAN-architecture.png
-    └── facades_generate_animation.gif
+    └── CityScapess_generate_animation.gif
 ```
 
 ### Installation
 ```bash
-git clone https://github.com/harshilpradhan/pix2pix-facades.git
-cd pix2pix-facades
+git clone https://github.com/harshilpradhan/pix2pix-CityScapess.git
+cd pix2pix-CityScapess
 pip install -r requirements.txt
 ```
 
 ### Usage
-1. Open the Jupyter notebook: `pix2pix_conditional_gan_facades.ipynb`
+1. Open the Jupyter notebook: `pix2pix_conditional_gan_CityScapess.ipynb`
 2. The notebook contains complete implementation with:
    - Dataset loading and preprocessing
    - Model architecture definitions
@@ -286,9 +286,9 @@ pip install -r requirements.txt
 
 ![Final Generated Results](assets/final%20generated%20image.png)
 
-*Sample results showing input segmentation maps and corresponding generated facade images*
+*Sample results showing input segmentation maps and corresponding generated CityScapes images*
 
-The trained model successfully generates realistic architectural facades from semantic segmentation maps, demonstrating:
+The trained model successfully generates realistic architectural CityScapess from semantic segmentation maps, demonstrating:
 - **Sharp architectural details** in building structures and textures
 - **Realistic window and door rendering** with proper proportions
 - **Consistent lighting and shadows** across building surfaces
@@ -301,8 +301,8 @@ The trained model successfully generates realistic architectural facades from se
 
 ### Repository Files
 ```
-pix2pix-facades/
-├── pix2pix_conditional_gan_facades.ipynb     # Complete implementation
+pix2pix-CityScapess/
+├── pix2pix_conditional_gan_CityScapess.ipynb     # Complete implementation
 ├── README.md                                # Project documentation
 ├── requirements.txt                         # Dependencies
 ├── LICENSE                                  # MIT License
@@ -311,7 +311,7 @@ pix2pix-facades/
     ├── final_generated_image.png           # Generated results
     ├── epoch_loss.png                      # Training curves  
     ├── Pix2Pix-GAN-architecture.png       # Architecture diagram
-    └── facades_generate_animation.gif      # Training animation
+    └── CityScapess_generate_animation.gif      # Training animation
 ```
 
 ---
@@ -320,7 +320,7 @@ pix2pix-facades/
 
 - **Original Paper**: [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004)
 - **Implementation Reference**: [PyTorch Pix2Pix](https://github.com/znxlwm/pytorch-pix2pix)  
-- **Facades Dataset**: Original facades dataset from Pix2Pix paper
+- **CityScapess Dataset**: Original CityScapess dataset from Pix2Pix paper
 
 ---
 
@@ -344,7 +344,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Phillip Isola et al. for the original Pix2Pix paper
-- The original facades dataset providers for high-quality architectural data
+- The original CityScapes dataset providers for high-quality architectural data
 - PyTorch community for excellent deep learning framework
 - Original implementation authors for inspiration and reference
 
